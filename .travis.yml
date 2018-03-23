@@ -1,0 +1,6 @@
+language: csharp  
+mono: none
+dotnet: 2.0.0
+install: dotnet restore
+script: 
+  - dotnet test ./WebApp.Tests -c Release -f netcoreapp2.0 -v minimal
