@@ -11,5 +11,11 @@ namespace WebApp.Tests
         {
             "that string".Should().NotBeEmpty().And.HaveLength(11);
         }
+
+        [TestMethod]
+        public void Failed()
+        {
+            "a".Should().BeEmpty();
+        }
     }
 }
